@@ -1,0 +1,18 @@
+body {
+  background-color: #eee;
+  font-family: 'Open-sans', sans-serif;
+}
+
+button {
+  background: linear-gradient(to bottom, #EDA400, #CA7C00);
+  padding: 15px 30px 15px 30px;
+  font-size: 15px;
+  border-radius: 8px;
+
+}
+
+button:hover {
+  background: linear-gradient(to top, #EDA400, #CA7C00);
+  font-size: 18px;
+  
+}
