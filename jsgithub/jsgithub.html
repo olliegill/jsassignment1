@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSGITHUB</title>
+</head>
+<body>
+  <link href='jsgithub.css' rel='stylesheet' type='text/css'>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css" rel="stylesheet">
+
+  <!-- TOP SECTION -->
+<div class="top-section">
+  <div class="top-left">
+   <div class ="github-logo">
+      <a href= "https://github.com/"><span class="mega-octicon octicon-mark-github"></span></a>
+   </div>
+
+    <div class="top-right-links">
+     <span class="octicon octicon-plus">
+
+     </span>
+     <a href="https://github.com/notifications"><span class="notifications"><span class="octicon octicon-inbox"></span></span></a>
+     <a href="https://github.com/settings/profile"><span class="settings"><span class="octicon octicon-gear"></span></span></a>
+     <a href="https://github.com"><span class="sign-out"><span class="octicon octicon-sign-out"></span></span></a>
+    </div>
+
+   <div class="top-right">
+     <script type="text/template" id="top-section-image">
+      <div class="top-image">
+        <a href="<%= imageurl %>">
+          <img src="<%= imagelarge %>">
+          <div class="top-username"><%= username %></div>
+        </a>
+      </div>
+      </script>
+   </div>
+
+
+
+     <input type="text" class="top-input" placeholder="Search GitHub"></input>
+   <div class="top-links">
+     <a href="https://github.com/explore">Explore</a>
+     <a href="https://gist.github.com/">Gist</a>
+     <a href="https://github.com/blog">Blog</a>
+     <a href="https://help.github.com">Help</a>
+   </div>
+ </div>
+
+
+</div>
+
+<!-- USER SIDEBAR -->
+<section class="user-sidebar">
+ <div class="imagelarge"></div>
+
+<!-- SIDEBAR SCRIPT -->
+<script type="text/template" id="user-sidebar-image">
+  <div class="sidebar-image">
+    <a href="<%= imageurl %>"><img src="<%= imagelarge %>"></a>
+    <h3 class="name"><%= name %></h3>
+    <div class="h5">
+    <h5 class="username"><%= username %></h5>
+    </div>
+  </div>
+
+  <div class="sidebar-details">
+    <div class="location">
+      <span class="octicon octicon-location"></span>
+      <%= location %>
+    </div>
+    <div class="email">
+      <span class="octicon octicon-mail"></span>
+      <a href="<%= email %>"><%= email %></a>
+    </div>
+    <div class="joined">
+      <span class="octicon octicon-clock"></span>Joined on
+      <%= joined2 %>
+    </div>
+  </div>
+</script>
+
+</section>
+
+<!-- MAIN SECTION -->
+
+<section class="main-section">
+<div class="top-main-section"></div>
+
+ <!-- REPOS SCRIPT -->
+ <div class="main-repos">
+    <script type="text/template" id="main-repos-script">
+    <div class="each-repo">
+
+      <a href="<%= repoUrl %>"><h3 class="repo-name"><%= repoName %></h3></a>
+      <div class="repo-update"><%= updated2 %></div>
+
+      <div class="repo-right">
+        <div class="language"><%= language %></div>
+          <a href="<%= stargazersUrl %>"
+          <span class="octicon octicon-star"><%= stargazersCount %></span></a>
+          <a href="<%= forksUrl %>"
+          <span class="octicon octicon-git-branch"><%= forksCount %></span>
+
+
+      </div>
+
+
+      </div>
+    </script>
+  </div>
+
+
+
+</div>
+</section>
+<!-- TEMPLATES -->
+
+
+<!-- SCRIPTS -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.2/moment.js"></script>
+
+<script src='token.js'></script>
+<script src="jsgithub.js"></script>
+</body>
+</html>
