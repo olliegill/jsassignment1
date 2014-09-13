@@ -1118,7 +1118,7 @@ total = pricenum.reduce(function(a , b) {
 
 total = total.toFixed(2);
 
-console.log("The average price is $" + total);
+console.log("The average price is $" + total +".");
 
 /* Question 2 */
 
@@ -1153,10 +1153,6 @@ eight.materials.forEach(function(eightmaterials) {
  console.log("\n\n");
 
 }});
-
-
-
-
 
 /* Question 6 */
 

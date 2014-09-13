@@ -33,12 +33,38 @@ var sidebar_stuff = {
   location: user.location,
   email: user.email,
   joined: user.created_at,
-  joined2: moment(user.created_at).format('MMM D, YYYY')
-
+  joined2: moment(user.created_at).format('MMM D, YYYY'),
+  followers: user.followers,
+  following: user.following,
 };
 
   myTemplate('user-sidebar-image', '.imagelarge', sidebar_stuff);
 });
+
+// SIDEBAR STARRED
+
+$.getJSON("https://api.github.com/users/olliegill/starred").done(function(star) {
+
+  var starred_stuff = {
+    starred:star.length,
+  };
+
+  myTemplate('starredId', '.number2', starred_stuff);
+});
+
+// SIDEBAR ORGANIZATIONS
+
+$.getJSON("https://api.github.com/users/olliegill/orgs").done(function(orgs) {
+  _.each(orgs, function(org){
+  var org_stuff = {
+    orgUrl: org.url,
+    orgAvatar: org.avatar_url,
+  };
+  myTemplate('orgId', '.org-avatar', org_stuff);
+
+});
+});
+
 
 // TOP OF MAIN SECTION
 

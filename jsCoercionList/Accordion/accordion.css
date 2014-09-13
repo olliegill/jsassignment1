@@ -1,5 +1,7 @@
 .accordion {
   margin: 0 auto;
+  width: 400px;
+
 
 }
 
@@ -10,6 +12,7 @@ header {
   padding-left: 10px;
   font-size: 30px;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
+  letter-spacing: 2px;
 }
 
 header:hover {
@@ -25,23 +28,25 @@ header:hover {
 }
 
 .pdiv {
-  height: 260px;
+  height: 270px;
   overflow: hidden;
   top: 0;
+  background-color: #F1F1F1;
+
 }
 
 p {
   color: #b2b2b2;
-  margin: 0;
+  margin: 5px;
   background-color: #F1F1F1;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 .section {
   height: 36px;
   overflow: hidden;
   border: solid #0769ad 1px;
-  border-radius: 3px;
-  width: 400px;
+  border-radius: 5px;
   margin: 0 auto;
 
 }
@@ -50,9 +55,8 @@ p {
   overflow: hidden;
   border: solid #0769ad 1px;
   border-radius: 3px;
-  width: 400px;
   margin: 0 auto;
-  height: 260px;
+  height: 270px;
   transition: 1s;
 
 }
