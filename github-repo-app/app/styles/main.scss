@@ -1,0 +1,27 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+// Custom Styles
+
+body {
+  background-color: #F1F1F1;
+}
+
+.each-issue {
+  display: inline-block;
+  border: groove #FA743E 10px;
+  background: #FA743E;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+
+.container-comments {
+  outline: solid blue 1px;
+  display: inline-block;
+  border: groove #4485F5 10px;
+  background: #4485F5;
+  opacity: 0.8;
+  z-index: 0;
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>github repo app</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+
+   <!-- ISSUES NAME -->
+   <div class="container">
+     <div class ="each-issue"></div>
+     <div class="each-comment"></div>
+   </div>
+
+   <script type="text/template" id="issues-list">
+     <a class="links" href="#" data-id="<%= commentsUrl %>" >
+      <div class="issues-name">
+      <h2><%= title %></h2></div>
+     </a>
+</script>
+     <div class="container-comments">
+
+<div class="comments-div">    </div>
+   <script type="text/template" id="comments-list">
+      <p><%= body %></p>
+   </script>
+</div>
+
+<!--   <div class="issues-name-div">
+    <ul class="issues-name">
+
+    </ul>
+
+
+   <script type="text/template" id="issues-list">
+     <li class="each-issue">
+      <a class="links" href="link" id="<%= commentsUrl %>">
+        <h1><%= title %></h2>
+          <p><%= description %></p>
+      </a>
+     </li>
+     </div>
+   </script> -->
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src='scripts/token.js'></script>
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+
+</body>
+</html>
